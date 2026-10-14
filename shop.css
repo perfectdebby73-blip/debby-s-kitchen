@@ -1,0 +1,338 @@
+/* ==========================================================================
+   DEBBY'S KITCHEN — SHOP PAGE STYLESHEET (shop.css)
+   ========================================================================== */
+
+/* Page Banner */
+.page-banner {
+  background: linear-gradient(135deg, var(--dark-charcoal) 0%, #2b3945 100%);
+  color: var(--white);
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  border-bottom: 4px solid var(--primary-orange);
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #CBD2D9;
+  margin-bottom: 12px;
+}
+
+.breadcrumb a {
+  color: var(--golden-yellow);
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #7B8794;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-size: 1.15rem;
+  color: #D3DCE6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Filter & Search Toolbar */
+.shop-toolbar {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.toolbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Search Box Styling (Pure CSS demonstration) */
+.search-box-wrapper {
+  flex: 1;
+  min-width: 280px;
+  max-width: 460px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 18px 12px 42px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  background-color: var(--light-gray);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.search-input:focus {
+  background-color: var(--white);
+  border-color: var(--primary-orange);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 138, 0, 0.2);
+}
+
+.search-icon-symbol {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.search-hint {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+/* Shop stats summary */
+.shop-stats {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.shop-stats span {
+  color: var(--deep-orange);
+}
+
+/* Category Filter Chips */
+.category-filter-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 700;
+  background-color: var(--light-gray);
+  color: var(--dark-charcoal);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  background-color: var(--cream);
+  color: var(--deep-orange);
+  border-color: var(--primary-orange);
+}
+
+.filter-btn.active {
+  background-color: var(--deep-orange);
+  color: var(--white);
+  border-color: var(--deep-orange);
+  box-shadow: 0 4px 10px rgba(232, 93, 4, 0.3);
+}
+
+/* 4-Column Product Grid */
+.shop-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.shop-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.shop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-orange);
+}
+
+.shop-card-img-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--light-gray);
+}
+
+.shop-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.shop-card:hover .shop-card-img {
+  transform: scale(1.08);
+}
+
+.shop-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.shop-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.shop-card-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--deep-orange);
+  margin-bottom: 6px;
+}
+
+.shop-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--dark-charcoal);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.shop-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.shop-card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.shop-card-price {
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--deep-orange);
+}
+
+.shop-card-tag {
+  font-size: 0.72rem;
+  color: var(--fresh-green);
+  font-weight: 700;
+}
+
+.shop-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* Bottom ordering callout */
+.shop-order-callout {
+  margin-top: 50px;
+  background-color: var(--cream);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  border-left: 6px solid var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.shop-callout-text h3 {
+  font-size: 1.3rem;
+  color: var(--dark-charcoal);
+  margin-bottom: 4px;
+}
+
+.shop-callout-text p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive Queries for Shop Page */
+@media (max-width: 1100px) {
+  .shop-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .shop-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .shop-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-card-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shop-toolbar {
+    padding: 16px;
+  }
+
+  .search-box-wrapper {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .shop-order-callout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

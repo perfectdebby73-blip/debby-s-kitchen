@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your food shopping cart at Debby's Kitchen. Fresh Nigerian meals ready for delivery. Call 08154866319.">
+  <title>Shopping Cart — Debby's Kitchen | Serve You What You Want</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <div class="announcement-bar">
+    <p>Debby's Kitchen — Fresh Nigerian Meals Delivered To Your Doorstep! Call: <strong>08154866319</strong></p>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand" aria-label="Debby's Kitchen Homepage">
+        <img src="images/logo.png" alt="Debby's Kitchen Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">DEBBY'S <span>KITCHEN</span></span>
+          <span class="brand-motto">Serve You What You Want</span>
+        </div>
+      </a>
+
+      <!-- CSS-only mobile hamburger toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="offers.html" class="nav-link">Offers</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="cart.html" class="header-cart-link active" aria-label="View Shopping Cart">
+            🛒 Cart <span class="cart-count">2</span>
+          </a>
+          <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE BANNER
+       ======================================================================== -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>Your Shopping Cart</span>
+      </nav>
+      <h1 class="page-title">Your Shopping Cart</h1>
+      <p class="page-subtitle">Review your selected Nigerian meals before proceeding to order confirmation.</p>
+    </div>
+  </div>
+
+  <main class="cart-section">
+    <div class="container">
+
+      <!-- Static Demonstration Notice -->
+      <div class="demo-notice-box">
+        <span class="demo-notice-icon">🛒</span>
+        <div>
+          <strong>Static Cart Demonstration:</strong> Because Debby's Kitchen website is built strictly with HTML5 and external CSS without JavaScript, this shopping cart displays a static example. Quantities, subtotals, and totals are illustrative demonstrations. To place your custom food order, click <strong>Proceed to Order</strong> or call/WhatsApp <strong>08154866319</strong> directly.
+        </div>
+      </div>
+
+      <!-- MAIN CART LAYOUT -->
+      <div class="cart-layout-grid">
+
+        <!-- Left: Cart Items Table -->
+        <div class="cart-items-card">
+          <!-- Table Header -->
+          <div class="cart-table-header">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Subtotal</span>
+          </div>
+
+          <!-- Cart Item 1: Jollof Rice and Chicken -->
+          <div class="cart-item-row">
+            <div class="cart-product-cell">
+              <img src="images/jollof-rice.jpg" alt="Jollof Rice and Chicken" class="cart-product-thumb">
+              <div>
+                <h2 class="cart-item-name">Jollof Rice and Chicken</h2>
+                <p class="cart-item-subtext">Category: Rice Dishes &bull; Standard Pack Portion</p>
+              </div>
+            </div>
+
+            <div class="cart-price-cell">
+              &#8358;2,500
+            </div>
+
+            <div class="cart-qty-cell">
+              <div class="cart-qty-static-box">
+                <span>Qty: 2</span>
+              </div>
+              <span class="qty-note">Static example</span>
+            </div>
+
+            <div class="cart-subtotal-cell">
+              &#8358;5,000
+            </div>
+          </div>
+
+          <!-- Cart Item 2: Fried Rice and Chicken -->
+          <div class="cart-item-row">
+            <div class="cart-product-cell">
+              <img src="images/fried-rice.jpg" alt="Fried Rice and Chicken" class="cart-product-thumb">
+              <div>
+                <h2 class="cart-item-name">Fried Rice and Chicken</h2>
+                <p class="cart-item-subtext">Category: Rice Dishes &bull; Chef's Special Pack</p>
+              </div>
+            </div>
+
+            <div class="cart-price-cell">
+              &#8358;3,000
+            </div>
+
+            <div class="cart-qty-cell">
+              <div class="cart-qty-static-box">
+                <span>Qty: 1</span>
+              </div>
+              <span class="qty-note">Static example</span>
+            </div>
+
+            <div class="cart-subtotal-cell">
+              &#8358;3,000
+            </div>
+          </div>
+
+          <!-- Cart Table Footer Bar -->
+          <div class="cart-table-footer">
+            <a href="shop.html" class="btn btn-outline">&larr; Continue Shopping</a>
+            <a href="order.html" class="btn btn-primary">Proceed to Order &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Right: Order Summary Card -->
+        <aside class="cart-summary-card">
+          <h2 class="summary-title">Order Summary</h2>
+
+          <div class="summary-line-row">
+            <span>Items Subtotal:</span>
+            <strong>&#8358;8,000</strong>
+          </div>
+
+          <div class="summary-line-row">
+            <span>Estimated Delivery Fee:</span>
+            <strong>&#8358;1,000</strong>
+          </div>
+
+          <div class="summary-line-row">
+            <span>Packaging &amp; Handling:</span>
+            <strong class="text-fresh-green">Free</strong>
+          </div>
+
+          <div class="summary-total-row">
+            <span class="summary-total-label">Estimated Total:</span>
+            <span class="summary-total-price">&#8358;9,000</span>
+          </div>
+
+          <div class="summary-actions">
+            <a href="order.html" class="btn btn-primary btn-block btn-lg">Proceed to Order</a>
+            <a href="https://wa.me/2348154866319" class="btn btn-whatsapp btn-block" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a>
+          </div>
+
+          <div class="summary-trust-badge">
+            🔒 Safe &amp; Direct Ordering &bull; Pay on Confirmation or Delivery &bull; Hot &amp; Fresh Guaranteed
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- ====================================================================
+           ALTERNATIVE STATIC DESIGN: EMPTY CART LAYOUT DEMONSTRATION
+           ==================================================================== -->
+      <section class="empty-cart-demo-section" aria-label="Alternative Empty Cart Design Demonstration">
+        <div class="empty-cart-icon" aria-hidden="true">🛒</div>
+        <span class="badge badge-gold mb-12">Alternative Static Design Preview</span>
+        <h2 class="empty-cart-title">Your Cart is Currently Empty</h2>
+        <p class="empty-cart-text">
+          Looks like you haven't added any delicious Nigerian meals to your plate yet. Explore our freshly cooked food catalogue and select your favorites!
+        </p>
+        <a href="shop.html" class="btn btn-primary btn-lg">Start Shopping Our Menu</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON
+       ======================================================================== -->
+  <a href="https://wa.me/2348154866319" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact Debby's Kitchen on WhatsApp">
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 2C6.516 2 2.031 6.485 2.031 12c0 1.99.58 3.844 1.583 5.407L2 22l4.757-1.572A9.948 9.948 0 0012.03 22c5.515 0 10-4.485 10-10 0-5.515-4.485-10-10-10zm5.82 14.288c-.244.686-1.42 1.258-1.956 1.334-.537.075-1.228.113-1.98-.129-.46-.147-1.05-.343-1.815-.674-3.21-1.39-5.284-4.63-5.445-4.846-.16-.215-1.304-1.737-1.304-3.313 0-1.577.828-2.35 1.12-2.656.293-.306.64-.383.854-.383.213 0 .426.002.613.012.198.01.464-.075.727.556.27.649.917 2.238.997 2.4.08.163.134.354.027.57-.107.215-.16.35-.32.537-.16.188-.337.42-.48.563-.16.162-.327.339-.14.66.186.321.829 1.369 1.777 2.213 1.22 1.085 2.247 1.422 2.568 1.583.32.161.508.134.696-.08.187-.215.8-933 1.014-1.255.213-.322.427-.269.72-.161.294.107 1.868.88 2.188 1.04.32.162.534.242.614.376.08.135.08.779-.164 1.465z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Debby's Kitchen Logo" class="footer-logo-img">
+            <span class="footer-brand-name">DEBBY'S <span>KITCHEN</span></span>
+          </div>
+          <span class="footer-motto-tag">Serve You What You Want</span>
+          <p class="footer-bio">
+            Debby's Kitchen is dedicated to serving you delicious, fresh, and hearty Nigerian meals made with love, culinary tradition, and quality ingredients.
+          </p>
+          <a href="tel:08154866319" class="footer-phone-highlight">
+            📞 08154866319
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Menu</a></li>
+            <li><a href="categories.html">Food Categories</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Place Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Food Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="categories.html#rice-dishes">Rice Dishes</a></li>
+            <li><a href="categories.html#soups-swallow">Soups and Swallow</a></li>
+            <li><a href="categories.html#pasta-noodles">Pasta and Noodles</a></li>
+            <li><a href="categories.html#chicken-meat">Chicken and Meat</a></li>
+            <li><a href="categories.html#fish-seafood">Fish and Seafood</a></li>
+            <li><a href="categories.html#snacks-pastries">Snacks &amp; Pastries</a></li>
+            <li><a href="categories.html#small-chops">Small Chops</a></li>
+            <li><a href="categories.html#drinks">Drinks &amp; Juices</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact &amp; Service</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="footer-contact-label">Phone:</span>
+              <a href="tel:08154866319">08154866319</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">WhatsApp:</span>
+              <a href="https://wa.me/2348154866319" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">Location:</span>
+              <span>Nigeria (Prompt Meal Delivery)</span>
+            </li>
+            <li>
+              <span class="footer-contact-label">Currency:</span>
+              <span>Nigerian Naira (&#8358;)</span>
+            </li>
+          </ul>
+          <div class="footer-hours-box">
+            <strong>Operating Hours:</strong><br>
+            Mon – Sat: 8:00 AM – 9:00 PM<br>
+            Sunday: 12:00 PM – 8:00 PM
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Debby's Kitchen</strong>. All rights reserved. Serve You What You Want.</p>
+        <p>Built with Pure HTML5 &amp; CSS • No JavaScript Required</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

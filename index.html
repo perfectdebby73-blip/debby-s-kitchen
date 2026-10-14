@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Debby's Kitchen - Authentic Nigerian meals, snacks, small chops, and drinks. Serve You What You Want. Call 08154866319 to order delicious food.">
+  <title>Debby's Kitchen — Serve You What You Want | Nigerian Food E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       SECTION A: ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <div class="announcement-bar">
+    <p>Welcome to <strong>Debby's Kitchen</strong> — Delicious Food, Made With Love! Call to order: <strong>08154866319</strong></p>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand" aria-label="Debby's Kitchen Homepage">
+        <img src="images/logo.png" alt="Debby's Kitchen Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">DEBBY'S <span>KITCHEN</span></span>
+          <span class="brand-motto">Serve You What You Want</span>
+        </div>
+      </a>
+
+      <!-- CSS-only mobile hamburger checkbox toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="offers.html" class="nav-link">Offers</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="cart.html" class="header-cart-link" aria-label="View Shopping Cart">
+            🛒 Cart <span class="cart-count">2</span>
+          </a>
+          <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         SECTION B: HERO SECTION
+         ====================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-content">
+            <span class="hero-motto-badge">🍽️ Debby's Kitchen • Serve You What You Want</span>
+            <h1 class="hero-title">Delicious Meals, <span>Just the Way You Love Them!</span></h1>
+            <p class="hero-text">
+              Discover delicious Nigerian meals, tasty snacks, and satisfying food prepared with care. At Debby's Kitchen, we are here to serve you what you want.
+            </p>
+            <div class="hero-buttons">
+              <a href="shop.html" class="btn btn-primary btn-lg">Explore Our Menu</a>
+              <a href="order.html" class="btn btn-secondary btn-lg">Order Now</a>
+            </div>
+            <div class="hero-features-strip">
+              <div class="hero-feature-item">
+                <span class="hero-feature-bullet"></span>
+                <span>Fresh Ingredients Daily</span>
+              </div>
+              <div class="hero-feature-item">
+                <span class="hero-feature-bullet"></span>
+                <span>Speedy Food Delivery</span>
+              </div>
+              <div class="hero-feature-item">
+                <span class="hero-feature-bullet"></span>
+                <span>Affordable Naira Prices</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card">
+              <img src="images/hero-food.jpg" alt="Rich spread of freshly prepared Nigerian dishes" class="hero-img">
+              <div class="hero-floating-badge">
+                <strong>Debby's Kitchen</strong>
+                <span>Authentic Taste & Quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION C: FOOD CATEGORIES
+         ====================================================================== -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Menu Selection</span>
+          <h2 class="section-title">Explore Our Food Categories</h2>
+          <p class="section-description">
+            From steaming bowls of rich native soups to hot jollof rice and crispy pastries, discover what satisfies your taste buds.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Category 1: Rice Dishes -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/jollof-rice.jpg" alt="Nigerian Rice Dishes" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Rice Dishes</h3>
+              <p class="category-desc">Smoky party jollof, vibrant fried rice, and savory white rice with native stew.</p>
+              <a href="categories.html#rice-dishes" class="category-link">Browse Rice Dishes &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 2: Soups and Swallow -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/egusi-soup.jpg" alt="Nigerian Soups and Swallow" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Soups and Swallow</h3>
+              <p class="category-desc">Rich egusi, efo riro, and edikang ikong paired with smooth eba, semo, or pounded yam.</p>
+              <a href="categories.html#soups-swallow" class="category-link">Browse Soups & Swallow &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 3: Pasta and Noodles -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/spaghetti.jpg" alt="Pasta and Noodles" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Pasta and Noodles</h3>
+              <p class="category-desc">Spicy stir-fry noodles, rich jollof spaghetti, and seasoned chicken pasta.</p>
+              <a href="categories.html#pasta-noodles" class="category-link">Browse Pasta & Noodles &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 4: Chicken and Meat -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/fried-chicken.jpg" alt="Chicken and Meat" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Chicken and Meat</h3>
+              <p class="category-desc">Crispy spiced fried chicken, peppered goat meat, and tender beef stew pieces.</p>
+              <a href="categories.html#chicken-meat" class="category-link">Browse Chicken & Meat &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 5: Fish and Seafood -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/grilled-fish.jpg" alt="Fish and Seafood" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Fish and Seafood</h3>
+              <p class="category-desc">Spicy grilled whole catfish, tilapia, and seasoned fried croaker with pepper sauce.</p>
+              <a href="categories.html#fish-seafood" class="category-link">Browse Fish & Seafood &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 6: Snacks and Pastries -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/meat-pie.jpg" alt="Snacks and Pastries" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Snacks and Pastries</h3>
+              <p class="category-desc">Golden flaky meat pies, sweet puff-puff, sausage rolls, and baked goodies.</p>
+              <a href="categories.html#snacks-pastries" class="category-link">Browse Snacks & Pastries &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 7: Small Chops -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/small-chops.jpg" alt="Small Chops Platter" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Small Chops</h3>
+              <p class="category-desc">Party finger food platters with crunchy spring rolls, spicy samosas, and puff-puff.</p>
+              <a href="categories.html#small-chops" class="category-link">Browse Small Chops &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Category 8: Drinks -->
+          <article class="category-card">
+            <div class="category-image-wrap">
+              <img src="images/food-banner.jpg" alt="Chilled Drinks and Beverages" class="category-card-img">
+            </div>
+            <div class="category-content">
+              <h3 class="category-name">Drinks</h3>
+              <p class="category-desc">Chilled Chapman, fresh zobo, malt drinks, and natural fruit juices to complement meals.</p>
+              <a href="categories.html#drinks" class="category-link">Browse Drinks &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION D: POPULAR MEALS
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Customer Favorites</span>
+          <h2 class="section-title">Our Popular Meals</h2>
+          <p class="section-description">
+            Handpicked bestsellers crafted daily by Debby's Kitchen. Freshly cooked, beautifully packed, and ready to enjoy.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Meal 1: Jollof Rice and Chicken -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/jollof-rice.jpg" alt="Jollof Rice and Chicken" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-red">Bestseller</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Jollof Rice and Chicken</h3>
+              <p class="product-snippet">Authentic Nigerian firewood-style jollof rice paired with succulent, spiced fried chicken.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;2,500</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Meal 2: Fried Rice and Chicken -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/fried-rice.jpg" alt="Fried Rice and Chicken" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-green">Chef's Special</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Fried Rice and Chicken</h3>
+              <p class="product-snippet">Seasoned basmati rice tossed with fresh carrots, sweet peas, liver, and golden fried chicken.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;3,000</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Meal 3: White Rice and Stew -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/white-rice.jpg" alt="White Rice and Stew" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-orange">Classic</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">White Rice and Stew</h3>
+              <p class="product-snippet">Fluffy white parboiled rice served with rich, peppered Nigerian tomato stew and tender meat.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;2,000</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Meal 4: Eba and Egusi Soup -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/egusi-soup.jpg" alt="Eba and Egusi Soup" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-gold">Traditional</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Eba and Egusi Soup</h3>
+              <p class="product-snippet">Thick, hearty melon seed soup infused with pumpkin leaves and assorted meat, with yellow garri eba.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;2,000</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Meal 5: Spaghetti -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/spaghetti.jpg" alt="Spaghetti" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-red">Popular</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Spaghetti</h3>
+              <p class="product-snippet">Spicy jollof spaghetti cooked in aromatic peppers, onions, herb seasonings, and sliced sausage.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;2,800</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Meal 6: Puff-Puff -->
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="images/puff-puff.jpg" alt="Puff-Puff" class="product-card-img">
+              <div class="product-badge-overlay">
+                <span class="badge badge-orange">Snack Favorite</span>
+              </div>
+            </div>
+            <div class="product-content">
+              <h3 class="product-title">Puff-Puff</h3>
+              <p class="product-snippet">Golden brown, soft, pillowy, and sweetly spiced fried dough balls. An all-time favorite Nigerian treat.</p>
+              <div class="product-price-row">
+                <span class="product-price">&#8358;1,000</span>
+                <span class="product-price-note">Sample Price</span>
+              </div>
+              <div class="product-actions">
+                <a href="product-details.html" class="btn btn-outline btn-sm">View Details</a>
+                <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-buttons justify-center mt-40 mb-0">
+          <a href="shop.html" class="btn btn-secondary btn-lg">View Complete Shop Menu &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION E: WHY CHOOSE DEBBY'S KITCHEN?
+         ====================================================================== -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Quality Commitment</span>
+          <h2 class="section-title">Why Choose Debby's Kitchen?</h2>
+          <p class="section-description">
+            We put passion, cleanliness, and authentic Nigerian culinary tradition into every pot and platter we prepare.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-circle icon-green">🥗</div>
+            <h3 class="feature-title">Fresh Ingredients</h3>
+            <p class="feature-desc">We handpick local market produce, fresh peppers, and tender poultry daily for wholesome goodness.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle icon-orange">🍲</div>
+            <h3 class="feature-title">Delicious Taste</h3>
+            <p class="feature-desc">Rich, authentic Nigerian seasoning cooked with traditional care to deliver unbeatable flavor every time.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle icon-red">🧼</div>
+            <h3 class="feature-title">Hygienic Preparation</h3>
+            <p class="feature-desc">Our kitchen strictly adheres to strict cleanliness standards, sterile packaging, and food safety.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-circle icon-gold">🤝</div>
+            <h3 class="feature-title">Friendly Customer Service</h3>
+            <p class="feature-desc">Warm, respectful, and attentive service dedicated to fulfilling our motto: Serve You What You Want.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION F: PROMOTIONAL BANNER
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-grid">
+            <div class="promo-content">
+              <span class="promo-tag">Special Combos & Deals</span>
+              <h2 class="promo-title">Good Food, Great Deals!</h2>
+              <p class="promo-text">
+                Discover delicious meals and exciting food combinations at prices you will love. Treat yourself, your family, or your colleagues today.
+              </p>
+              <a href="offers.html" class="btn btn-gold btn-lg">Explore Our Offers</a>
+            </div>
+            <div class="promo-image-wrap">
+              <img src="images/food-banner.jpg" alt="Festive food combos and seasonings" class="promo-banner-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION G: ABOUT PREVIEW
+         ====================================================================== -->
+    <section class="section section-cream">
+      <div class="container">
+        <div class="about-preview-grid">
+          <div class="about-preview-img-card">
+            <img src="images/vegetable-soup.jpg" alt="Fresh Nigerian vegetable soup prepared at Debby's Kitchen" class="about-preview-img">
+          </div>
+          <div class="about-preview-content">
+            <span class="section-subtitle">About Debby's Kitchen</span>
+            <h2 class="section-title">Welcome to Debby's Kitchen</h2>
+            <p class="section-description">
+              We believe good food brings happiness. Our goal is to provide enjoyable meals with great taste, carefully selected ingredients, and a welcoming customer experience.
+            </p>
+            <p class="section-description">
+              Whether you are a busy professional needing lunch, a student wanting a hearty meal, or a family planning a weekend dinner, we make sure you get the best Nigerian meals on demand.
+            </p>
+            <div class="about-preview-stats">
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Fresh Cooking</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">8+</span>
+                <span class="stat-label">Food Categories</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">&#8358;</span>
+                <span class="stat-label">Fair Prices</span>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary">Learn More About Us &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION H: TESTIMONIALS (SAMPLE DEMONSTRATION CONTENT)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Customer Experiences</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-description">
+            Read sample feedback from food lovers who enjoy our meals. (Demonstration placeholder reviews).
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <span class="placeholder-badge">Sample Customer Feedback</span>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The jollof rice from Debby's Kitchen has that authentic smokiness you only find at top Nigerian parties. Chicken was well-seasoned and tender. Highly recommended!"
+            </p>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar">C</div>
+              <div>
+                <span class="testimonial-author-name">Chidinma O.</span>
+                <span class="testimonial-author-role">Working Professional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="placeholder-badge">Sample Customer Feedback</span>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Ordered Egusi soup and eba for our family weekend lunch. The portion was generous, and the aroma was incredible. Debby's Kitchen truly serves you what you want!"
+            </p>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar">T</div>
+              <div>
+                <span class="testimonial-author-name">Tunde A.</span>
+                <span class="testimonial-author-role">Family Customer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="placeholder-badge">Sample Customer Feedback</span>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Their small chops platter and meat pies were the hit of our office celebration. Golden, crunchy, and freshly baked. Fast delivery and friendly communication."
+            </p>
+            <div class="testimonial-author-row">
+              <div class="testimonial-avatar">E</div>
+              <div>
+                <span class="testimonial-author-name">Emeka N.</span>
+                <span class="testimonial-author-role">Office Event Planner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION I: CONTACT CALL-TO-ACTION
+         ====================================================================== -->
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-banner">
+          <p class="cta-motto">Serve You What You Want</p>
+          <h2 class="cta-title">Craving Something Delicious?</h2>
+          <p class="cta-desc">
+            Contact Debby's Kitchen today and let us serve you what you want. Order single meals, party trays, or weekly packages with ease.
+          </p>
+          <div class="cta-actions">
+            <a href="tel:08154866319" class="btn btn-primary btn-lg">Call 08154866319</a>
+            <a href="https://wa.me/2348154866319" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            <a href="order.html" class="btn btn-outline-white btn-lg">Order Online</a>
+          </div>
+          <span class="cta-phone-number">Direct Line: 08154866319</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON (ACCESSIBLE TO ALL PAGES)
+       ======================================================================== -->
+  <a href="https://wa.me/2348154866319" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact Debby's Kitchen on WhatsApp">
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 2C6.516 2 2.031 6.485 2.031 12c0 1.99.58 3.844 1.583 5.407L2 22l4.757-1.572A9.948 9.948 0 0012.03 22c5.515 0 10-4.485 10-10 0-5.515-4.485-10-10-10zm5.82 14.288c-.244.686-1.42 1.258-1.956 1.334-.537.075-1.228.113-1.98-.129-.46-.147-1.05-.343-1.815-.674-3.21-1.39-5.284-4.63-5.445-4.846-.16-.215-1.304-1.737-1.304-3.313 0-1.577.828-2.35 1.12-2.656.293-.306.64-.383.854-.383.213 0 .426.002.613.012.198.01.464-.075.727.556.27.649.917 2.238.997 2.4.08.163.134.354.027.57-.107.215-.16.35-.32.537-.16.188-.337.42-.48.563-.16.162-.327.339-.14.66.186.321.829 1.369 1.777 2.213 1.22 1.085 2.247 1.422 2.568 1.583.32.161.508.134.696-.08.187-.215.8-933 1.014-1.255.213-.322.427-.269.72-.161.294.107 1.868.88 2.188 1.04.32.162.534.242.614.376.08.135.08.779-.164 1.465z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Debby's Kitchen Logo" class="footer-logo-img">
+            <span class="footer-brand-name">DEBBY'S <span>KITCHEN</span></span>
+          </div>
+          <span class="footer-motto-tag">Serve You What You Want</span>
+          <p class="footer-bio">
+            Debby's Kitchen is dedicated to serving you delicious, fresh, and hearty Nigerian meals made with love, culinary tradition, and quality ingredients.
+          </p>
+          <a href="tel:08154866319" class="footer-phone-highlight">
+            📞 08154866319
+          </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Menu</a></li>
+            <li><a href="categories.html">Food Categories</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Place Order</a></li>
+          </ul>
+        </div>
+
+        <!-- Food Categories -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Food Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="categories.html#rice-dishes">Rice Dishes</a></li>
+            <li><a href="categories.html#soups-swallow">Soups and Swallow</a></li>
+            <li><a href="categories.html#pasta-noodles">Pasta and Noodles</a></li>
+            <li><a href="categories.html#chicken-meat">Chicken and Meat</a></li>
+            <li><a href="categories.html#fish-seafood">Fish and Seafood</a></li>
+            <li><a href="categories.html#snacks-pastries">Snacks & Pastries</a></li>
+            <li><a href="categories.html#small-chops">Small Chops</a></li>
+            <li><a href="categories.html#drinks">Drinks & Juices</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Working Hours -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact & Service</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="footer-contact-label">Phone:</span>
+              <a href="tel:08154866319">08154866319</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">WhatsApp:</span>
+              <a href="https://wa.me/2348154866319" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">Location:</span>
+              <span>Nigeria (Prompt Meal Delivery)</span>
+            </li>
+            <li>
+              <span class="footer-contact-label">Currency:</span>
+              <span>Nigerian Naira (&#8358;)</span>
+            </li>
+          </ul>
+          <div class="footer-hours-box">
+            <strong>Operating Hours:</strong><br>
+            Mon – Sat: 8:00 AM – 9:00 PM<br>
+            Sunday: 12:00 PM – 8:00 PM
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Debby's Kitchen</strong>. All rights reserved. Serve You What You Want.</p>
+        <p>Built with Pure HTML5 & CSS • No JavaScript Required</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

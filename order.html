@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Place your food order with Debby's Kitchen. Fresh Nigerian meals, jollof rice, soups, small chops. Call 08154866319 or order via WhatsApp.">
+  <title>Place Your Food Order — Debby's Kitchen | Serve You What You Want</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <div class="announcement-bar">
+    <p>Debby's Kitchen &bull; Motto: <strong>Serve You What You Want</strong> &bull; Order Hotline: <strong>08154866319</strong></p>
+  </div>
+
+  <!-- ========================================================================
+       GLOBAL HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand" aria-label="Debby's Kitchen Homepage">
+        <img src="images/logo.png" alt="Debby's Kitchen Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">DEBBY'S <span>KITCHEN</span></span>
+          <span class="brand-motto">Serve You What You Want</span>
+        </div>
+      </a>
+
+      <!-- CSS-only mobile hamburger toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="categories.html" class="nav-link">Categories</a></li>
+          <li><a href="offers.html" class="nav-link">Offers</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-actions">
+          <a href="cart.html" class="header-cart-link" aria-label="View Shopping Cart">
+            🛒 Cart <span class="cart-count">2</span>
+          </a>
+          <a href="order.html" class="btn btn-primary btn-sm active">Order Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE BANNER
+       ======================================================================== -->
+  <div class="page-banner">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="shop.html">Shop</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>Order Now</span>
+      </nav>
+      <h1 class="page-title">Place Your Food Order</h1>
+      <p class="page-subtitle">Tell us what you would like to eat, and contact Debby's Kitchen to confirm your order.</p>
+    </div>
+  </div>
+
+  <main class="order-section">
+    <div class="container">
+
+      <!-- PROMINENT DEMONSTRATION NOTICE -->
+      <div class="demo-notice-box demo-notice-alert">
+        <span class="demo-notice-icon">⚠️</span>
+        <div>
+          <strong>Important Ordering Notice:</strong> This is a demonstration order form. Your order will not be submitted automatically. Please contact Debby's Kitchen directly to confirm your order by calling <strong>08154866319</strong> or via WhatsApp.
+        </div>
+      </div>
+
+      <!-- MAIN ORDER LAYOUT -->
+      <div class="order-layout-grid">
+
+        <!-- Left Column: Order Form Card -->
+        <div class="order-form-card">
+          <div class="order-form-header">
+            <h2 class="order-form-title">Custom Order Request</h2>
+            <p class="order-form-subtitle">Fill in your preferred Nigerian meal selections and delivery preferences.</p>
+          </div>
+
+          <form action="#" method="get" class="contact-form">
+
+            <!-- Section 1: Customer Contact Details -->
+            <div class="order-field-section">
+              <div class="order-section-legend">1. Customer Information</div>
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="cust-name" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <input type="text" id="cust-name" name="customer_name" class="form-input" placeholder="e.g. Bukola Johnson" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="cust-phone" class="form-label">Phone Number <span class="required-star">*</span></label>
+                  <input type="tel" id="cust-phone" name="customer_phone" class="form-input" placeholder="e.g. 08154866319" required>
+                </div>
+              </div>
+
+              <div class="form-group mt-14">
+                <label for="cust-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                <input type="email" id="cust-email" name="customer_email" class="form-input" placeholder="e.g. bukola@example.com" required>
+              </div>
+            </div>
+
+            <!-- Section 2: Meal Selection -->
+            <div class="order-field-section">
+              <div class="order-section-legend">2. Meal &amp; Quantity</div>
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="order-food" class="form-label">Food Item <span class="required-star">*</span></label>
+                  <select id="order-food" name="food_item" class="form-select" required>
+                    <option value="" disabled selected>-- Select a Delicious Meal --</option>
+                    <option value="jollof-chicken">Jollof Rice and Chicken (&#8358;2,500)</option>
+                    <option value="fried-chicken">Fried Rice and Chicken (&#8358;3,000)</option>
+                    <option value="white-rice-stew">White Rice and Stew (&#8358;2,000)</option>
+                    <option value="beans-plantain">Beans and Plantain (&#8358;2,200)</option>
+                    <option value="egusi-eba">Eba and Egusi Soup (&#8358;2,000)</option>
+                    <option value="pounded-yam-efo">Pounded Yam &amp; Vegetable Soup (&#8358;3,200)</option>
+                    <option value="spaghetti-chicken">Spaghetti and Chicken (&#8358;2,800)</option>
+                    <option value="fried-chicken-portion">Crispy Fried Chicken Portions (&#8358;1,800)</option>
+                    <option value="grilled-fish">Seasoned Grilled Fish (&#8358;3,500)</option>
+                    <option value="puff-puff-pack">Golden Puff-Puff Pack (12 pcs) (&#8358;1,000)</option>
+                    <option value="meat-pie">Classic Meat Pie (&#8358;1,200)</option>
+                    <option value="small-chops-platter">Small Chops Platter (&#8358;3,500)</option>
+                    <option value="family-package">Family Meal Package (&#8358;12,000)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="order-qty" class="form-label">Quantity (Packs) <span class="required-star">*</span></label>
+                  <input type="number" id="order-qty" name="quantity" class="form-input" min="1" max="50" value="1" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: Delivery Preferences -->
+            <div class="order-field-section">
+              <div class="order-section-legend">3. Fulfillment Method</div>
+              <div class="radio-pill-group">
+                <label class="radio-pill-label">
+                  <input type="radio" name="order_type" value="delivery" checked>
+                  <span>🛵 Home / Office Delivery</span>
+                </label>
+                <label class="radio-pill-label">
+                  <input type="radio" name="order_type" value="pickup">
+                  <span>🥡 Self Pickup / Takeaway</span>
+                </label>
+              </div>
+
+              <div class="form-group mt-16">
+                <label for="delivery-address" class="form-label">Delivery Address</label>
+                <textarea id="delivery-address" name="delivery_address" class="form-textarea" placeholder="Enter your full street address, landmark, and city for dispatch..."></textarea>
+              </div>
+
+              <div class="form-row-2col mt-14">
+                <div class="form-group">
+                  <label for="delivery-date" class="form-label">Preferred Delivery Date</label>
+                  <input type="date" id="delivery-date" name="delivery_date" class="form-input">
+                </div>
+
+                <div class="form-group">
+                  <label for="delivery-time" class="form-label">Preferred Time</label>
+                  <input type="time" id="delivery-time" name="delivery_time" class="form-input">
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 4: Special Instructions -->
+            <div class="order-field-section">
+              <div class="order-section-legend">4. Special Culinary Instructions</div>
+              <div class="form-group">
+                <label for="order-notes" class="form-label">Additional Instructions</label>
+                <textarea id="order-notes" name="special_instructions" class="form-textarea" placeholder="e.g. Extra pepper, separate stew in cup, grilled chicken instead of fried, no onions..."></textarea>
+              </div>
+            </div>
+
+            <!-- Terms Confirmation Checkbox -->
+            <div class="terms-checkbox-box">
+              <label class="terms-label">
+                <input type="checkbox" name="agree_terms" required>
+                <span>
+                  I understand that this is a demonstration order form and that my food order requires direct confirmation with Debby's Kitchen via telephone or WhatsApp.
+                </span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Submit Order Request</button>
+          </form>
+        </div>
+
+        <!-- Right Column: Sidebar (Steps + Instant Action) -->
+        <aside class="order-sidebar">
+
+          <!-- Direct Instant Confirmation Box -->
+          <div class="instant-confirm-box">
+            <h3>⚡ Want Faster Service?</h3>
+            <p>
+              Debby's Kitchen is ready to take your order immediately. Call or chat with us right now!
+            </p>
+            <div class="instant-buttons-stack">
+              <a href="tel:08154866319" class="btn btn-primary btn-block btn-lg">
+                📞 Call 08154866319
+              </a>
+              <a href="https://wa.me/2348154866319" class="btn btn-whatsapp btn-block btn-lg" target="_blank" rel="noopener noreferrer">
+                💬 Order via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- How Ordering Works Timeline -->
+          <div class="order-summary-box">
+            <h3 class="sidebar-title">How Ordering Works</h3>
+            <div class="order-steps-list">
+              <div class="order-step-item">
+                <div class="step-number-circle">1</div>
+                <div class="step-details">
+                  <h4>Choose Your Meals</h4>
+                  <p>Browse our shop catalogue or select custom combo packages.</p>
+                </div>
+              </div>
+
+              <div class="order-step-item">
+                <div class="step-number-circle">2</div>
+                <div class="step-details">
+                  <h4>Direct Confirmation</h4>
+                  <p>Call <strong>08154866319</strong> or message on WhatsApp to confirm meal readiness and dispatch address.</p>
+                </div>
+              </div>
+
+              <div class="order-step-item">
+                <div class="step-number-circle">3</div>
+                <div class="step-details">
+                  <h4>Fresh Preparation</h4>
+                  <p>Our kitchen cooks your food to order using fresh local ingredients.</p>
+                </div>
+              </div>
+
+              <div class="order-step-item">
+                <div class="step-number-circle">4</div>
+                <div class="step-details">
+                  <h4>Hot &amp; Speedy Delivery</h4>
+                  <p>Receive your securely packed meals warm, delicious, and on time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP BUTTON
+       ======================================================================== -->
+  <a href="https://wa.me/2348154866319" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contact Debby's Kitchen on WhatsApp">
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.031 2C6.516 2 2.031 6.485 2.031 12c0 1.99.58 3.844 1.583 5.407L2 22l4.757-1.572A9.948 9.948 0 0012.03 22c5.515 0 10-4.485 10-10 0-5.515-4.485-10-10-10zm5.82 14.288c-.244.686-1.42 1.258-1.956 1.334-.537.075-1.228.113-1.98-.129-.46-.147-1.05-.343-1.815-.674-3.21-1.39-5.284-4.63-5.445-4.846-.16-.215-1.304-1.737-1.304-3.313 0-1.577.828-2.35 1.12-2.656.293-.306.64-.383.854-.383.213 0 .426.002.613.012.198.01.464-.075.727.556.27.649.917 2.238.997 2.4.08.163.134.354.027.57-.107.215-.16.35-.32.537-.16.188-.337.42-.48.563-.16.162-.327.339-.14.66.186.321.829 1.369 1.777 2.213 1.22 1.085 2.247 1.422 2.568 1.583.32.161.508.134.696-.08.187-.215.8-933 1.014-1.255.213-.322.427-.269.72-.161.294.107 1.868.88 2.188 1.04.32.162.534.242.614.376.08.135.08.779-.164 1.465z"/>
+    </svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- ========================================================================
+       GLOBAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Debby's Kitchen Logo" class="footer-logo-img">
+            <span class="footer-brand-name">DEBBY'S <span>KITCHEN</span></span>
+          </div>
+          <span class="footer-motto-tag">Serve You What You Want</span>
+          <p class="footer-bio">
+            Debby's Kitchen is dedicated to serving you delicious, fresh, and hearty Nigerian meals made with love, culinary tradition, and quality ingredients.
+          </p>
+          <a href="tel:08154866319" class="footer-phone-highlight">
+            📞 08154866319
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Menu</a></li>
+            <li><a href="categories.html">Food Categories</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Place Order</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Food Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="categories.html#rice-dishes">Rice Dishes</a></li>
+            <li><a href="categories.html#soups-swallow">Soups and Swallow</a></li>
+            <li><a href="categories.html#pasta-noodles">Pasta and Noodles</a></li>
+            <li><a href="categories.html#chicken-meat">Chicken and Meat</a></li>
+            <li><a href="categories.html#fish-seafood">Fish and Seafood</a></li>
+            <li><a href="categories.html#snacks-pastries">Snacks &amp; Pastries</a></li>
+            <li><a href="categories.html#small-chops">Small Chops</a></li>
+            <li><a href="categories.html#drinks">Drinks &amp; Juices</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact &amp; Service</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="footer-contact-label">Phone:</span>
+              <a href="tel:08154866319">08154866319</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">WhatsApp:</span>
+              <a href="https://wa.me/2348154866319" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <span class="footer-contact-label">Location:</span>
+              <span>Nigeria (Prompt Meal Delivery)</span>
+            </li>
+            <li>
+              <span class="footer-contact-label">Currency:</span>
+              <span>Nigerian Naira (&#8358;)</span>
+            </li>
+          </ul>
+          <div class="footer-hours-box">
+            <strong>Operating Hours:</strong><br>
+            Mon – Sat: 8:00 AM – 9:00 PM<br>
+            Sunday: 12:00 PM – 8:00 PM
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>Debby's Kitchen</strong>. All rights reserved. Serve You What You Want.</p>
+        <p>Built with Pure HTML5 &amp; CSS • No JavaScript Required</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

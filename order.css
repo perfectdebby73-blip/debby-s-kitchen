@@ -1,0 +1,235 @@
+/* ==========================================================================
+   DEBBY'S KITCHEN — ORDER PAGE STYLESHEET (order.css)
+   ========================================================================== */
+
+.order-section {
+  padding: 50px 0 80px;
+}
+
+/* Two-column Order Page Layout */
+.order-layout-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Order Form Card */
+.order-form-card {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.order-form-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--cream);
+}
+
+.order-form-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--dark-charcoal);
+  margin-bottom: 8px;
+}
+
+.order-form-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Form Sections Inside Order Form */
+.order-field-section {
+  margin-bottom: 28px;
+}
+
+.order-section-legend {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--dark-charcoal);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-section-legend::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+/* Radio Pill Group (Delivery vs Pickup) */
+.radio-pill-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.radio-pill-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background-color: var(--light-gray);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+}
+
+.radio-pill-label:hover {
+  border-color: var(--primary-orange);
+  background-color: var(--cream);
+}
+
+.radio-pill-label input[type="radio"] {
+  accent-color: var(--deep-orange);
+  width: 18px;
+  height: 18px;
+}
+
+/* Terms Checkbox */
+.terms-checkbox-box {
+  background-color: var(--cream);
+  padding: 18px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 138, 0, 0.3);
+  margin-bottom: 24px;
+}
+
+.terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.terms-label input[type="checkbox"] {
+  accent-color: var(--deep-orange);
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Right Sidebar: Ordering Guide & Direct Help */
+.order-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.order-summary-box {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--dark-charcoal);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-orange);
+}
+
+/* Order Steps Timeline */
+.order-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-step-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.step-number-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--deep-orange), var(--primary-orange));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.step-details h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--dark-charcoal);
+  margin-bottom: 4px;
+}
+
+.step-details p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Instant Direct Confirm Box */
+.instant-confirm-box {
+  background: linear-gradient(135deg, var(--dark-charcoal) 0%, #293845 100%);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  text-align: center;
+  border: 2px solid var(--golden-yellow);
+}
+
+.instant-confirm-box h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--golden-yellow);
+  margin-bottom: 10px;
+}
+
+.instant-confirm-box p {
+  font-size: 0.92rem;
+  color: #D3DCE6;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.instant-buttons-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Responsive Rules for Order Page */
+@media (max-width: 960px) {
+  .order-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-form-card {
+    padding: 24px 18px;
+  }
+
+  .radio-pill-group {
+    grid-template-columns: 1fr;
+  }
+}

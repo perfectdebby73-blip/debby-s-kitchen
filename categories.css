@@ -1,0 +1,255 @@
+/* ==========================================================================
+   DEBBY'S KITCHEN — CATEGORIES PAGE STYLESHEET (categories.css)
+   ========================================================================== */
+
+/* Quick Category Sticky Jump Bar */
+.category-nav-bar {
+  background-color: var(--white);
+  padding: 16px 0;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 77px;
+  z-index: 900;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.category-nav-scroll {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-jump-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 700;
+  background-color: var(--light-gray);
+  color: var(--dark-charcoal);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.category-jump-link:hover {
+  background-color: var(--deep-orange);
+  color: var(--white);
+  border-color: var(--deep-orange);
+}
+
+/* Category Section Blocks */
+.category-block {
+  padding: 60px 0;
+  scroll-margin-top: 140px; /* Accounts for sticky header + jump bar */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.category-block:last-of-type {
+  border-bottom: none;
+}
+
+.category-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.category-badge-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--white);
+}
+
+/* Category Accent Themes */
+.accent-rice .category-badge-icon { background: linear-gradient(135deg, var(--tomato-red), var(--deep-orange)); }
+.accent-soup .category-badge-icon { background: linear-gradient(135deg, var(--golden-yellow), #d48b00); color: var(--dark-charcoal); }
+.accent-pasta .category-badge-icon { background: linear-gradient(135deg, var(--primary-orange), var(--tomato-red)); }
+.accent-meat .category-badge-icon { background: linear-gradient(135deg, #8B0000, var(--tomato-red)); }
+.accent-fish .category-badge-icon { background: linear-gradient(135deg, #1A535C, var(--fresh-green)); }
+.accent-snack .category-badge-icon { background: linear-gradient(135deg, #FFB703, var(--primary-orange)); color: var(--dark-charcoal); }
+.accent-chops .category-badge-icon { background: linear-gradient(135deg, var(--fresh-green), #1b4332); }
+.accent-drinks .category-badge-icon { background: linear-gradient(135deg, #2A9D8F, #264653); }
+
+.category-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--dark-charcoal);
+  line-height: 1.2;
+}
+
+.category-meta-desc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+/* Category Hero Banner Inside Section */
+.category-showcase-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.category-banner-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 320px;
+  box-shadow: var(--shadow-md);
+}
+
+.category-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.category-banner-card:hover .category-banner-img {
+  transform: scale(1.05);
+}
+
+.category-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(31, 41, 51, 0.85) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: var(--white);
+}
+
+.category-banner-overlay h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.category-banner-overlay p {
+  font-size: 0.88rem;
+  color: #D3DCE6;
+}
+
+/* Item List Grid Inside Category */
+.category-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.category-mini-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.category-mini-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-orange);
+  box-shadow: var(--shadow-sm);
+}
+
+.mini-card-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-xs);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.mini-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--dark-charcoal);
+  margin-bottom: 4px;
+}
+
+.mini-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.mini-card-price-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini-card-price {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--deep-orange);
+}
+
+.mini-card-links {
+  display: flex;
+  gap: 8px;
+}
+
+/* Responsive Rules for Categories Page */
+@media (max-width: 960px) {
+  .category-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .category-banner-card {
+    height: 240px;
+  }
+
+  .category-heading {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-block {
+    padding: 40px 0;
+  }
+
+  .category-block-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
